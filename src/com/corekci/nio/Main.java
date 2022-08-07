@@ -66,6 +66,7 @@ public class Main {
             fileProcessorThreads.forEach(FileProcessorThread::logAndStop);
             System.out.println("**Processor*"+ productAmountsMap +"***");
             System.out.println("**Creator***"+ messageFromCreator +"***");
+            //check only created files by Thread matches with productAmountsMap
             System.out.println(messageFromCreator.equals(productAmountsMap.toString()));
             System.out.println(productQueues);
         }
